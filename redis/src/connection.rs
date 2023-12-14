@@ -913,18 +913,18 @@ pub fn connect(
 
 pub(crate) fn client_set_info_pipeline() -> Pipeline {
     let mut pipeline = crate::pipe();
-    pipeline
-        .cmd("CLIENT")
-        .arg("SETINFO")
-        .arg("LIB-NAME")
-        .arg("redis-rs")
-        .ignore();
-    pipeline
-        .cmd("CLIENT")
-        .arg("SETINFO")
-        .arg("LIB-VER")
-        .arg(env!("CARGO_PKG_VERSION"))
-        .ignore();
+    // pipeline
+    //     .cmd("CLIENT")
+    //     .arg("SETINFO")
+    //     .arg("LIB-NAME")
+    //     .arg("redis-rs")
+    //     .ignore();
+    // pipeline
+    //     .cmd("CLIENT")
+    //     .arg("SETINFO")
+    //     .arg("LIB-VER")
+    //     .arg(env!("CARGO_PKG_VERSION"))
+    //     .ignore();
     pipeline
 }
 
